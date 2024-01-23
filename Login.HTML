@@ -3,22 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aku-Laper</title>
-    <style>
-        h1{color: #000;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: Inter;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.8px;}
-    </style>
+    <title>Login</title>
 </head>
+<style>
+    body{width: 70%; 
+        height: 70%; 
+        position: relative; 
+        background: white}
+    .judul{
+        left: 51px; 
+        top: 51px; 
+        position: absolute; 
+        color: black; 
+        font-size: 40px; 
+        font-family: Inter;
+        font-weight: 700; 
+        letter-spacing: 0.80px; 
+        word-wrap: break-word}
+    .center{width: 559px; 
+        height: 506.98px; 
+        left: 441px; 
+        top: 259px; 
+        position: absolute}
+    .box{width: 559px; 
+        height: 506.98px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        background: white; 
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25); 
+        border-radius: 22px}
+    .login{width: 119.35px; 
+        height: 36.72px; 
+        left: 49.98px; 
+        top: 46.92px; 
+        position: absolute; 
+        color: black; 
+        font-size: 30px; 
+        font-family: Inter; 
+        font-weight: 700; 
+        letter-spacing: 6px; 
+        word-wrap: break-word}
+    .padding-1{width: 478.41px; 
+        height: 62.22px; 
+        left: 40.80px; 
+        top: 148.93px; 
+        position: absolute}
+    .padding-2{width: 478.41px; 
+        height: 62.22px; 
+        left: 40.80px; 
+        top: 241.76px; 
+        position: absolute}
+    .user{width: 478.41px; 
+        height: 62.22px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        background: white; 
+        border-radius: 5px; 
+        border: 1px #C3C3C3 solid}
+    .password{width: 478.41px; 
+        height: 62.22px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        background: white; 
+        border-radius: 5px; 
+        border: 1px #C3C3C3 solid}
+    ::placeholder{left: 23px; 
+        top: 21px; 
+        position: absolute; 
+        color: #969494; 
+        font-size: 16px; 
+        font-family: Inter; 
+        font-weight: 400; 
+        word-wrap: break-word}
+    .sign-up{width: 154.03px; 
+        height: 19.38px; 
+        left: 40.80px; 
+        top: 350.91px; 
+        position: absolute; 
+        color: black; 
+        font-size: 16px; 
+        font-family: Inter; 
+        font-weight: 400; 
+        word-wrap: break-word}
+    .daftar{width: 92.83px; 
+        height: 19.38px; 
+        left: 172.14px; 
+        top: 365.91px; 
+        position: absolute; 
+        color: #A485FC; 
+        font-size: 16px; 
+        font-family: Inter; 
+        font-weight: 400; 
+        word-wrap: break-word}
+    .submit{width: 478.41px; 
+        height: 62.22px; 
+        left: 40.80px; 
+        top: 396.81px; 
+        position: absolute}
+    .tombol{width: 478.41px; 
+        height: 62.22px; 
+        left: 0px; 
+        top: 0px; 
+        position: absolute; 
+        background: black}
+    .tulisan{left: 207px; 
+        top: 19px; 
+        position: absolute; 
+        color: white; 
+        font-size: 20px; 
+        font-family: Inter; 
+        font-weight: 600; 
+        word-wrap: break-word}
+</style>
 <body>
-    <h1>Akuntansi<br>dan<br>Layanan Perbankan</h1>
-    <label>User Name:<input type="text" id="username"></label><br>
-    <label>Password:<input type="password" id="password"></label><br>
-    <button type="submit">MASUK</button>
+    <h1 class="judul">Akuntansi<br>Layanan Perbankan</h1>
+        <div class="center">
+            <div class="box">
+                <p class="login">Login</p><br>
+                    <div class="padding-1">
+                        <input class="user" type="text" id="username" placeholder="Masukan Email Anda"><br>
+                    </div>
+                    <div class="padding-2">
+                        <input class="password" type="password" id="password" placeholder="Masukan Password Anda"><br>
+                    </div>
+                    <div>
+                        <div class="daftar"><a href="laman/daftar.html">Daftar di sini</a></div><!--Link WOY-->
+                        <p class="sign-up">Belum Punya Akun?</p>
+                    </div>
+                    <div class="submit">
+                        <button class="tombol" type="submit">
+                            <div class="tulisan">LOGIN</button></div>
+                    </div>
+            </div>
+        </div>
 </body>
 </html>
